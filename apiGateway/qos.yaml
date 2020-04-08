@@ -1,0 +1,10 @@
+data:
+  - id: hrbot # 自定義的路由 ID，保持唯一, 需要與 ${service}/application.yml 的ID 相同
+    - RateLimitByCpuGatewayFilter=true
+    - RateLimitByIpGatewayFilter=true, 20, 1, 1
+    - RequestSize=5000 # bits, 5000 ~= 5Kb
+  - id: hrface
+    - RateLimitByCpuGatewayFilter=true
+    - RateLimitByIpGatewayFilter=true, 20, 1, 1
+    - RequestSize=20000 # bits, 20000 ~= 20Kb
+

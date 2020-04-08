@@ -1,0 +1,18 @@
+  
+data:
+        hrbot:
+            RateLimitByCpuGatewayFilter: true
+            RateLimitByIpGatewayFilter : 
+                                swtich: true
+                                max_qos: 20
+                                increase: 1
+                                inrease_time: 1
+            RequestSize: 5000
+        hrface:
+            RateLimitByCpuGatewayFilter: true
+            RateLimitByIpGatewayFilter:
+                                swtich: true
+                                max_qos: 20
+                                increase: 1
+                                inrease_time: 1
+            RequestSize: 20000
